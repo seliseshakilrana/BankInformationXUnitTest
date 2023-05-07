@@ -65,4 +65,4 @@ namespace BankInformationTest
             Assert.Equal(otherAccount.Balance, account.Balance);
         }
     }
-}
+} 
