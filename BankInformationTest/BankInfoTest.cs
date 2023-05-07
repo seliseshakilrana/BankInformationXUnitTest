@@ -64,5 +64,16 @@ namespace BankInformationTest
             // Assert
             Assert.Equal(otherAccount.Balance, account.Balance);
         }
+
+        [Fact]
+        public void TransferFundTo_Null_Exception()
+        {
+            // Arrange
+            var account = new BankAccount(1000);
+
+            // Act and Assert 
+            Assert.Throws<ArgumentNullException>(() => account.TransferFundsTo(null, 1000));
+        }
+
     }
 } 

@@ -35,7 +35,7 @@
         }
         public void TransferFundsTo(BankAccount bankAccount, double amount) 
         { 
-            if(bankAccount == null)
+            if(bankAccount is null)
             {
                 throw new ArgumentNullException(nameof(bankAccount));
             }
